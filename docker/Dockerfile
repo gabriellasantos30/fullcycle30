@@ -6,9 +6,7 @@ COPY . .
 
 RUN go build -o /main main.go
 
-
 ## Deploy
-## Strach base debian, serve para imagens super mínimas(Que contém apenas um único binários)
 FROM scratch
 
 WORKDIR /
